@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Add To Cart Mini Project</span>
+    <div class="w-auto">
+      <a routerLink="home" class="m-1 text-dark">Home</a>
+      <a routerLink="aboutus" class="m-1 text-dark">Products</a>
+    </div>
+    <div class="d-flex input-group w-auto">
+      <a routerLink="contactus" class="navbar-brand mb-0 h1">Cart [{{this.rs.counter}}] </a>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

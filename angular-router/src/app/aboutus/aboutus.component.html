@@ -1,0 +1,28 @@
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div class="content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4" *ngFor="let data of ProductData; let i=index">
+                    <div class="card">
+                        <a class="img-card">
+                            <img src={{ProductData[i].ImageURL}} />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">{{ProductData[i].SKU}}</h4>
+                            <p class="card-body m-0">{{ProductData[i].Description}}<br>
+                                <strong>Brand: </strong>{{ProductData[i].Brand}}<br>
+                                <strong>Price: </strong>{{ProductData[i].Price}}<br>
+                                <strong>Quantity Available: </strong>{{ProductData[i].Quantity}}<br>
+                            </p>
+                        </div>
+                        <div class="card-read-more">
+                            <button class="btn btn-primary col-12 rounded-0" (click)="AddtoCart(ProductData[i])">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

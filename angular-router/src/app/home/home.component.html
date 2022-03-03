@@ -1,0 +1,24 @@
+<section class="wrapper">
+  <div class="container-fostrap">
+    <div class="content">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4" *ngFor="let data of ProductData; let i=index">
+          <div class="card">
+            <a class="img-card" routerLink="aboutus">
+              <img src={{ProductData[i].ImageURL}}/>
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">{{ProductData[i].SKU}}</h4>
+              <p class="card-body">{{ProductData[i].Description}}</p>
+            </div>
+            <div class="card-read-more">
+              <button class="btn btn-link btn-block">
+                Show Product
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
